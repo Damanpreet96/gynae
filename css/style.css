@@ -777,3 +777,83 @@ section#new-about {
 h1.mb-4.cust {
     margin-bottom: 10px !important;
 }
+
+.footer-form {
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    z-index: 1000;
+    width: 286px;
+}
+.footer-form .heading-look {
+    font-size: 22px;
+    background: #c7295c;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 4px 0;
+    cursor: pointer;
+}
+div#mini_contact_form {
+    padding: 15px;
+    display: none;
+    background: #ffff;
+}
+.footer-form button.btn.first.btn-primary.text-center {
+    background-color: #e91e63;
+    border: none;
+    margin-top: 15px;
+}
+
+.bubble {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 99;
+}
+.bubble a.call {
+    background: #b5255e;
+}
+.bubble a {
+    border-radius: 5px 0 0 5px;
+    margin-top: 8px;
+    box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 46%);
+    overflow: hidden;
+    color: #fff;
+    padding: 10px 14px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: 55px;
+    transition: all 0.5s linear;
+    height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.bubble label {
+    display: none;
+    transition: all 0.5s linear;
+    margin-bottom: 0;
+    margin-right: 35px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.bubble a.whats {
+    background: #25D366;
+}
+.bubble a:hover {
+    width: 100%;
+}
+.bubble a:hover label {
+    display: block;
+}
+a.pdf-file {
+    background: red;
+}
