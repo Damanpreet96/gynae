@@ -144,24 +144,14 @@ overflow-x:hidden !important
         }
         
         .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--dark);
+            font-size: 32px;
+           color: #03445a;
             position: relative;
             display: inline-block;
             padding-bottom: 15px;
         }
         
-        .section-title h2:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--secondary);
-            border-radius: 2px;
-        }
+    
         
         /* About Section */
         .about-content {
@@ -249,71 +239,54 @@ section#products  h2.fw-bold.mb-4, section#products p {
     color: #fff;
 }
         
-        /* Third Party Manufacturing */
-      .manufacturing {
-    background: linear-gradient(rgb(6 84 150 / 66%), rgb(6 84 150 / 65%)), url(image/Best-Pharma-Contract-Manufacturing-Solutions-BG.jpg) no-repeat center center / cover;
-    color: var(--white);
-    background-position: bottom;
-    background-size: cover;
-}
-        
-        .manufacturing .section-title h2 {
-            color: var(--white);
-        }
-        
-        .manufacturing .section-title h2:after {
-            background: var(--secondary);
-        }
-        
-        .manufacturing-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 30px;
-            margin-bottom: 30px;
-            height: 100%;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-            transition: var(--transition);
-        }
-        
-        .manufacturing-card:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.15);
-        }
-        
-        .manufacturing-icon {
-            font-size: 2.5rem;
-            color: var(--secondary);
-            margin-bottom: 20px;
-        }
-        
-        /* Contact Section */
-        .contact-form {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-      .contact-info {
-    padding: 30px;
-    background: aliceblue;
-    border-radius: 10px;
-}
-        
-        .contact-icon {
-            width: 50px;
-            height: 50px;
-            background: rgba(6, 84, 150, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--primary);
-            font-size: 20px;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
+        /* contact */
+         .contact-section {
+      padding: 60px 0;
+    }
+    .contact-card {
+      display: flex;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    }
+    .contact-left {
+      background: linear-gradient(135deg, #e91e63, #c2185b);
+      color: #fff;
+      padding: 40px 30px;
+      flex: 1;
+    }
+    .contact-left h3 {
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    .contact-info i {
+      font-size: 20px;
+      margin-right: 12px;
+    }
+    .contact-right {
+      background: #fff;
+      padding: 40px 30px;
+      flex: 2;
+    }
+    .contact-right h3 {
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    .btn-custom {
+      background: #e91e63;
+      color: #fff;
+      border-radius: 30px;
+      padding: 10px 28px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover {
+      background: #c2185b;
+      color: #fff;
+    }
         
         /* Footer */
        footer {
@@ -461,27 +434,9 @@ img.footer-logo {
     opacity: 1.5 !important;
     transition: opacity .15s ease;
 }
-.manufacturing .btn-outline-primary {
-    border-color: var(--primary);
-    color: #ffffff;
-    padding: 10px 25px;
-    border-radius: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-    transition: var(--transition);
-    background-color: #ec5f07;
-}
-.manufacturing .btn-outline-primary:hover {
-    background-color: var(--secondary-dark);
-    border-color: var(--secondary-dark);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
 
-        /* Stats Section */
-       .stats {
+        /* counter Section */
+       .counter {
     padding: 80px 0;
    background: linear-gradient(to right, #f8dce6 0%, #f8f9fa 100%);
     color: #000;
@@ -489,19 +444,19 @@ img.footer-logo {
 }
 
         
-        .stats-grid {
+        .counter-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
         
-      .stat-item h3 {
+      .counter-item h3 {
     font-size: 3.5rem;
     margin-bottom: 10px;
     color: #c7295c;
 }
         
-        .stat-item p {
+        .counter-item p {
             font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -542,7 +497,16 @@ h3.mb-4.cust {
         @media (max-width: 768px) {
            
             
-           
+           h1.mb-4.cust {
+    margin-bottom: 10px !important;
+    margin-top: 35px;
+}
+.contact-card {
+    display: block !important;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
             
             .section-title h2 {
                 font-size: 2rem;
@@ -701,11 +665,11 @@ section#about {
     position: fixed !important;
 }
 
-.about-features {
+.abt-features {
             margin-top: 30px;
         }
         
-        .feature-item {
+        .abt-feature-item {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
@@ -724,4 +688,92 @@ section#about {
 }
 .feature-icon i {
     font-size: 40px;
+}
+
+.service-box {
+    color: #fff;
+    background: #c7295c;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0 0 30px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+.service-box:before{
+    content: "";
+    background: #fff;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    z-index: -1; 
+}
+.service-box .service-icons {
+    background: #c72a5d;
+    font-size: 35px;
+    text-align: left;
+    line-height: 180px;
+    width: 100px;
+    height: 130px;
+    padding: 0 0 0 30px;
+    margin: -60px 0 8px;
+    border-radius: 20px 50% 80% 0 / 20px 50% 50% 0;
+}
+.service-box .title {
+    background: #c72a5d;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 20px 15px 22px;
+    margin: 0;
+    border-radius: 30px 30px 100% 100%;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.service-box .description {
+    color: #333333;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 25px;
+}
+.service-box.yellow, .service-box.yellow .title, .service-box.yellow .service-icons {
+    background: #003d55;
+}
+.service-box.blue, .service-box.blue .title, .service-box.blue .service-icons {
+    background: #5417ff;
+}
+.service-box.green,
+.service-box.green .title,
+.service-box.green .service-icons{
+    background: #3c9e37;
+}
+@media only screen and (max-width: 990px){
+    .service-box{ margin: 0 0 30px; }
+}
+.floater{
+	animation-name: floater;
+	animation-duration: 3s;	
+	animation-iteration-count: infinite;
+	visibility: visible !important;	
+}
+@keyframes floater {
+	0% { transform: translateY(0%); }
+	50% { transform: translateY(8%); }
+	100% { transform: translateY(0%); }
+}
+
+
+section#new-about {
+    padding-bottom: 50px !important;
+}
+h1.mb-4.cust {
+    margin-bottom: 10px !important;
 }
