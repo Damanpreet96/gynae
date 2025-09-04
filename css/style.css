@@ -170,9 +170,7 @@ overflow-x:hidden !important
             transition: var(--transition);
         }
         
-        .about-image:hover img {
-            transform: scale(1.05);
-        }
+      
         
         /* Services Section */
         .service-card {
