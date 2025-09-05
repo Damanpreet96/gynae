@@ -412,7 +412,7 @@ img.footer-logo {
         }
         
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    background-color: #c6295c !important;
+    /* background-color: #c6295c !important; */
     opacity: 1 !important;
 }
 .carousel-control-next, .carousel-control-prev {
@@ -498,6 +498,12 @@ h3.mb-4.cust {
            h1.mb-4.cust {
     margin-bottom: 10px !important;
     margin-top: 35px;
+}
+img.thanx-img {
+    width: 100%;
+}
+a.navbar-brand img {
+    width: 100px !important;
 }
 .contact-card {
     display: block !important;
