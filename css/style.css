@@ -499,6 +499,9 @@ h3.mb-4.cust {
     margin-bottom: 10px !important;
     margin-top: 35px;
 }
+.floater {
+    animation-name: none !important;  
+}
 img.thanx-img {
     width: 100%;
 }
